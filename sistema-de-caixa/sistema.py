@@ -6,19 +6,22 @@ while True:
     opcao = input()
 
     if opcao == 'i':
-        for indice, produto in enumerate(produtos):
-            print(indice, produto)
-        print('Qual o número do produto que você quer?')
-        selecionado = input()
-            
-    lista.append(selecionado)
+        for indice, itens in enumerate(produtos):
+            print(indice, itens)
+    indice == itens
+    print('Qual o número do produto que você quer?')
+    selecionado = input()
+    
+    lista.append(produtos[selecionado])
+
     
     if opcao == 'l':
-        for indice, produtoDaLista in enumerate(lista):
-            print(indice, produtoDaLista)     
+        for  itens in enumerate(lista):
+            print(itens)
+            soma == (precosDeItensLista)
 
-        if opcao == 'a':
-            for indice, excluirProduto in enumerate(produtoDaLista):
-                print(indice, produtoDaLista)  
+    if opcao == 'a':
+        for indice, excluirProduto in enumerate(lista):
+            print(indice, itens)  
 
 
