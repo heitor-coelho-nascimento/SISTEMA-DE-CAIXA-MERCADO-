@@ -1,27 +1,30 @@
 produtos = 'arroz', 'feijão'
-preco = 'R$ 10.50', 'R$ 12.50'
-lista = []
+precos = 'R$ 10.50', 'R$ 12.50'
+carrinho = []
 while True:
-    print ('Selecione uma opção: "[i]nserir", "[a]pagar", "[l]ista"')
+    print ('Selecione uma opção: "[i]nserir", "[a]pagar", "[c]arrinho"')
     opcao = input()
+
+#inserir produtos na sua lista
 
     if opcao == 'i':
         for indice, itens in enumerate(produtos):
-            print(indice, itens)
-    indice == itens
-    print('Qual o número do produto que você quer?')
-    selecionado = input()
-    
-    lista.append(produtos[selecionado])
+            print(indice, itens, precos[indice])
 
+        posicao = int(input("Digite a posição: "))
+        print(produtos[posicao], precos[posicao])
     
-    if opcao == 'l':
-        for  itens in enumerate(lista):
+        carrinho.append(itens)
+
+#lista dos produtos inseridos
+
+    if opcao == 'c':
+        for  itens in enumerate(carrinho):
             print(itens)
-            soma == (precosDeItensLista)
+   #         soma == (precosDeItensLista)
+
+#apagar produtos na sua lista
 
     if opcao == 'a':
-        for indice, excluirProduto in enumerate(lista):
-            print(indice, itens)  
-
-
+        for indice, excluirProduto in enumerate(carrinho):
+            print(indice, itens)
