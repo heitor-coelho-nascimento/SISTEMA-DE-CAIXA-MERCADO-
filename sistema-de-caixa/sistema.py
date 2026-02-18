@@ -8,23 +8,23 @@ while True:
 #inserir produtos na sua lista
 
     if opcao == 'i':
-        for indice, itens in enumerate(produtos):
-            print(indice, itens, precos[indice])
+        for produto in enumerate(produtos):
+            print(produto, precos)
 
-        posicao = int(input("Digite a posição: "))
-        print(produtos[posicao], precos[posicao])
-    
-        carrinho.append(itens)
+        posicao =  int(input("Digite a posição: "))
+        print(produtos, precos)
+        produto = posicao
+        carrinho.append(produto)
 
 #lista dos produtos inseridos
 
     if opcao == 'c':
-        for  itens in enumerate(carrinho):
-            print(itens)
+        for  produto in enumerate(carrinho):
+            print(produtos)
    #         soma == (precosDeItensLista)
 
 #apagar produtos na sua lista
 
     if opcao == 'a':
         for indice, excluirProduto in enumerate(carrinho):
-            print(indice, itens)
+            print(indice, produto)
