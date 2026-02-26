@@ -5,26 +5,31 @@ while True:
     print ('Selecione uma opção: "[i]nserir", "[a]pagar", "[c]arrinho"')
     opcao = input()
 
-#inserir produtos na sua lista
+    #inserir produtos na sua lista
 
     if opcao == 'i':
-        for produto in enumerate(produtos):
-            print(produto, precos)
+        for indice, produto in enumerate(produtos):
+            print(indice, produto, "-", precos[indice])
 
-        posicao =  int(input("Digite a posição: "))
-        print(produtos, precos)
-        produto = posicao
-        carrinho.append(produto)
+        posicao = int(input("Digite a posição: "))
 
-#lista dos produtos inseridos
+        item = (produtos[posicao], precos[posicao])
+        carrinho.append(item)
+
+        print('Adicionado', item)
+    #lista dos produtos inseridos
 
     if opcao == 'c':
-        for  produto in enumerate(carrinho):
-            print(produtos)
+        for  indice, item in enumerate(carrinho):
+            print(indice, item[0], '-', item[1])
+
    #         soma == (precosDeItensLista)
 
-#apagar produtos na sua lista
+    #apagar produtos na sua lista
 
     if opcao == 'a':
-        for indice, excluirProduto in enumerate(carrinho):
-            print(indice, produto)
+        for indice, item in enumerate(carrinho):
+            print(indice, item[0], "-", item[1])
+
+        posicao = int(input("Digite o índice para remover: "))
+        carrinho.pop(posicao)
